@@ -353,7 +353,7 @@ font-weight: 700;
   margin-top: 64px;
 }
 
-.process-steps::before,
+/* .process-steps::before,
 .process-steps::after {
   content: "";
   position: absolute;
@@ -363,7 +363,7 @@ font-weight: 700;
   height: 2px;
   background: linear-gradient(90deg, rgba(212,222,225,0) 0%, #D4DEE1 20%, #D4DEE1 80%, rgba(212,222,225,0) 100%);
   pointer-events: none;
-}
+} */
 
 .process-step {
   text-align: center;
@@ -403,7 +403,7 @@ font-weight: 700;
   .section-title { font-size: 28px; line-height: 32px; }
   .process-steps { 
     grid-template-columns: 1fr; 
-    gap: 32px;
+    gap: 52px;
     margin-top: 32px;
   }
   .process-steps::before,
@@ -901,7 +901,7 @@ font-weight: 700;
 
 /* ===== SECTION SEVEN RESPONSIVE ===== */
 @media (max-width: 1200px) {
-  .SectionSeven { padding: 0 20px 96px 20px; }
+  .SectionSeven { padding: 0 20px; }
   .section-title { font-size: 32px; line-height: 36px; }
   .gallery-item { width: 100%; height: 300px; }
   .gallery-item.large { width: 100%; }
@@ -912,7 +912,7 @@ font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  .SectionSeven { padding: 0 16px 72px 16px; }
+  .SectionSeven { padding: 0 16px; }
   .section-title { font-size: 28px; line-height: 32px; }
   .gallery-grid { 
     grid-template-columns: 1fr; 
@@ -1112,7 +1112,7 @@ font-weight: 700;
 
 /* ===== SECTION EIGHT RESPONSIVE ===== */
 @media (max-width: 1200px) {
-  .SectionEight { padding: 0 20px 72px 20px; }
+  .SectionEight { padding: 0 20px; }
   .section-title { font-size: 32px; line-height: 36px; }
   .contacts-grid { gap: 32px; }
   .socials-title { font-size: 22px; }
@@ -1126,7 +1126,7 @@ font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  .SectionEight { padding: 0 16px 72px 16px; }
+  .SectionEight { padding: 0 16px; }
   .section-title { font-size: 28px; line-height: 32px; }
   .contacts-grid { 
     grid-template-columns: 1fr; 
@@ -1173,12 +1173,29 @@ font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  .SectionTwo { padding: 0 16px; }
+  .section-one { margin-top: 32px; }
+  .SectionTwo { padding: 0 16px; margin-top: 48px; }
+  .SectionThree { margin-top: 48px; }
+  .pricing-block { margin-top: 48px; }
+  .SectionFour { margin-top: 48px; }
+  .SectionFive { margin-top: 0px; }
+  .SectionSix { margin-top: 48px; }
+  .SectionSeven { margin-top: 48px; }
+  .team-title { margin-top: 48px; }
+  .SectionEight { margin-top: 48px; }
+  .SiteFooter { margin-top: 48px; }
+  
   .section-title { font-size: 28px; line-height: 32px; }
   .section-container2 { 
     grid-template-columns: 1fr; 
     gap: 24px;
   }
+  
+  .section-element2 {
+    max-width: 300px;
+    width: 100%;
+  }
+  
   .section-element2-title { font-size: 20px; }
   .section-element2-text { font-size: 14px; }
   .section-element2-button { padding: 10px 20px; font-size: 14px; }
@@ -1195,7 +1212,6 @@ font-weight: 700;
 
   .SectionElementContainer2Img{
     border-radius: 8px;
-    
     display: block;
     margin-bottom: 12px;
   }
